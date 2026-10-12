@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "track1-client"
+version = "0.1.0"
+description = "AI Inference Engineering learning project"
+requires-python = ">=3.14"
+dependencies = []
