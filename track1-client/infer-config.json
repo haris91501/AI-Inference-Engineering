@@ -1,0 +1,6 @@
+{
+  "base_url": "http://localhost:8000",
+  "api_key": null,
+  "timeout": 30.0,
+  "model": "default-model"
+}
