@@ -58,4 +58,4 @@ def test_negative_duration_is_rejected():
         with pytest.raises(ValueError):
             await fake_inference(5, -1)
 
-    asyncio.run(scenario())
+    asyncio.run(scenario())                                                                         
