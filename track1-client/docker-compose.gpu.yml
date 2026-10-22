@@ -1,0 +1,27 @@
+services:
+  inference-server:
+    image: track1-client:day12
+    container_name: day12-serving-compose
+    ports:
+      - "8765:8765"
+    environment:
+      - MODEL_CACHE_DIR=/app/cache
+      - HF_HOME=/app/cache/huggingface
+      - TORCH_HOME=/app/cache/torch
+    volumes:
+      - ./artifacts/day12/model_cache:/app/cache
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8765/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    # Production GPU reservation block:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]

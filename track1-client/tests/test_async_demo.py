@@ -3,7 +3,7 @@ import time
 
 import pytest
 
-from src.inference_client.async_demo import (
+from inference_client.async_demo import (
     cancellation_demo,
     fake_inference,
     run_concurrent_requests,
