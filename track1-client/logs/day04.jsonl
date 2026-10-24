@@ -31,3 +31,7 @@
 {"request_id": "req-test-002", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.02688639999996667, "error_type": "HTTPStatusError", "status_code": 500}
 {"request_id": "req-test-003", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.2412355999999818, "error_type": "TimeoutError", "status_code": 200}
 {"request_id": "req-test-004", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.10268809999979567, "error_type": "CancelledError", "status_code": 200}
+{"request_id": "req-test-001", "chunks": [{"request_id": "req-test-001", "chunk": "Hello"}, {"request_id": "req-test-001", "chunk": " from"}, {"request_id": "req-test-001", "chunk": " the"}, {"request_id": "req-test-001", "chunk": " server"}], "first_chunk_seconds": 1.0734963000013522, "final_seconds": 1.076510300001246, "error_type": null, "status_code": 200}
+{"request_id": "req-test-002", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.03563819999908446, "error_type": "HTTPStatusError", "status_code": 500}
+{"request_id": "req-test-003", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.2206170999997994, "error_type": "TimeoutError", "status_code": 200}
+{"request_id": "req-test-004", "chunks": [], "first_chunk_seconds": null, "final_seconds": 0.10777559999951336, "error_type": "CancelledError", "status_code": 200}
